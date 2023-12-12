@@ -20,7 +20,6 @@ body {
     url("/Lorex-UI/Fonts/Poppins/Poppins-Black.woff");
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
@@ -1243,7 +1242,23 @@ li.foot-icn a::after {
 .lst-line a:hover {
   color: #919191;
 }
-
+span.afr-efct {
+  display: block;
+  position: relative;
+}
+span.afr-efct::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: #fff;
+  transition: all ease 0.5s;
+}
+.ryt-foot-side a:hover span.afr-efct::after {
+  width: 90%;
+}
 /* RESPONSIVE SECTION START */
 
 @media (max-width: 1200px) {
