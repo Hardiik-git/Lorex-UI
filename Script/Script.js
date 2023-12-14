@@ -33,3 +33,16 @@ $(".carousel").owlCarousel({
 });
 
 //  Btn Functions Written soon...
+
+let responsBtn = document.querySelector(".btn-res-pon");
+let responBtnClick = "none";
+
+responsBtn.addEventListener("click", () => {
+  if (responBtnClick === "none") {
+    responBtnClick = "block";
+    document.querySelector(".nav_list").style.display = "block";
+  } else {
+    responBtnClick = "none";
+    document.querySelector(".nav_list").style.display = "none";
+  }
+});
