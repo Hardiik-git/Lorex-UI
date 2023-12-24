@@ -135,7 +135,6 @@ nav.nav_bar_fl {
   margin: 0 auto;
   padding: 15px 0px;
   border-bottom: 1px solid #ffffff2b;
-  position: relative;
 }
 .logo {
   width: 40%;
@@ -1388,9 +1387,12 @@ span.afr-efct::after {
   li.icn_txt a {
     font-size: 10px;
   }
+  body {
+    position: relative;
+  }
   .nav_list {
     position: absolute;
-    top: 80px;
+    top: 0;
     right: 0;
     left: 0;
     backdrop-filter: blur(10px);
@@ -1398,8 +1400,11 @@ span.afr-efct::after {
     width: 100%;
     display: none;
     animation: sliderRightToLeft 2s;
-    height: 450px;
     z-index: 1;
+    padding: 150px 0px;
+  }
+  .res-pon-icn {
+    z-index: 999;
   }
   li.items:nth-child(6) {
     padding: 0;
