@@ -1419,7 +1419,7 @@ span.afr-efct::after {
     padding: 150px 0px;
   }
   .res-pon-icn {
-    z-index: 999;
+    z-index: 9;
   }
   li.items:nth-child(6) {
     padding: 0;
