@@ -146,6 +146,21 @@ nav.nav_bar_fl {
 }
 .logo a {
   color: #fff;
+  position: relative;
+}
+.logo a::after {
+  position: absolute;
+  bottom: 5px;
+  width: 0%;
+  background: #fff;
+  height: 1px;
+  content: "";
+  right: 0;
+  left: 0;
+  transition: all ease 0.5s;
+}
+.logo a:hover::after {
+  width: 100%;
 }
 .nav_list {
   width: 60%;
